@@ -2,7 +2,7 @@
   "name": "@uniswap/interface",
   "version": "1.0.7",
   "description": "Uniswap Interface",
-  "homepage": ".",
+  "homepage": "https://xhp281.github.io/swap",
   "license": "GPL-3.0-or-later",
   "scripts": {
     "contracts:compile:abi": "typechain --target ethers-v5 --out-dir src/abis/types \"./src/abis/**/*.json\"",
@@ -24,7 +24,8 @@
     "test": "craco test --coverage",
     "cypress:open": "cypress open --browser chrome --e2e",
     "cypress:run": "cypress run --browser chrome --e2e",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -182,6 +183,7 @@
     "firebase": "^9.1.3",
     "focus-visible": "^5.2.0",
     "get-graphql-schema": "^2.1.2",
+    "gh-pages": "^4.0.0",
     "graphql": "^16.5.0",
     "graphql-request": "^3.4.0",
     "immer": "^9.0.6",
